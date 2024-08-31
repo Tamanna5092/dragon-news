@@ -84,7 +84,7 @@ const Register = () => {
             <button className="btn btn-primary">Login</button>
           </div>
         </form>
-        <p className="text-center mt-4">Already have an account? <Link to={'/login'}>Login</Link></p>
+        <p className="text-center mt-4">Already have an account? <Link className="link link-primary font-semibold" to={'/login'}>Login</Link></p>
       </div>
     </div>
     );
