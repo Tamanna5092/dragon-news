@@ -6,13 +6,19 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to={"/"}>Home</NavLink>
+        <NavLink className="text-[#706F6F] text-lg" to={"/"}>Home</NavLink>
       </li>
       <li>
-        <NavLink to={"/about"}>About</NavLink>
+        <NavLink className="text-[#706F6F] text-lg" to={"/about"}>About</NavLink>
       </li>
       <li>
-        <NavLink to={"/career"}>Career</NavLink>
+        <NavLink className="text-[#706F6F] text-lg" to={"/career"}>Career</NavLink>
+      </li>
+      <li>
+        <NavLink className="text-[#706F6F] text-lg" to={"/login"}>Login</NavLink>
+      </li>
+      <li>
+        <NavLink className="text-[#706F6F] text-lg" to={"/register"}>Register</NavLink>
       </li>
     </>
   );
@@ -59,7 +65,7 @@ const Navbar = () => {
               src={profilePicture}/>
           </div>
         </div>
-        <Link>
+        <Link to={"/login"}>
           <button className="text-xl text-white font-semibold bg-[#403F3F] px-10 py-2">Login</button>
         </Link>
       </div>

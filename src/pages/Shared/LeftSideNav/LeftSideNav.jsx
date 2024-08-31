@@ -33,9 +33,47 @@ const LeftSideNav = () => {
         ))}
       </div>
       <div>
-        <div className="card card-compact bg-base-100 shadow-xl rounded-md">
+        <div className="card card-compact bg-base-100 shadow-xl rounded-md my-6">
           <figure>
             <img src={img1} alt="" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Bayern Slams Authorities Over Flight Delay to Club World Cup
+            </h2>
+            <div className="flex gap-5 items-center">
+              <div>
+                <h4 className="font-medium">Sports</h4>
+              </div>
+              <div className="flex items-center">
+                <img src={icon} alt="" />
+                <p className="ml-2 text-[#9F9F9F] font-medium">{moment().format("MMMM D, YYYY")}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card card-compact bg-base-100 shadow-xl rounded-md my-6">
+          <figure>
+            <img src={img2} alt="" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Bayern Slams Authorities Over Flight Delay to Club World Cup
+            </h2>
+            <div className="flex gap-5 items-center">
+              <div>
+                <h4 className="font-medium">Sports</h4>
+              </div>
+              <div className="flex items-center">
+                <img src={icon} alt="" />
+                <p className="ml-2 text-[#9F9F9F] font-medium">{moment().format("MMMM D, YYYY")}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card card-compact bg-base-100 shadow-xl rounded-md my-6">
+          <figure>
+            <img src={img3} alt="" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
