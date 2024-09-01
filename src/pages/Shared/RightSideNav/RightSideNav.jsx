@@ -30,7 +30,7 @@ const RightSideNav = () => {
           <span>Twitter</span>
         </a>
         <a className="flex p-4 text-lg items-center border rounded-b-md" href="">
-          <FaInstagram className="h-6 w-6 mr-3 rounded-full"></FaInstagram>
+          <FaInstagram className="h-6 w-6 mr-3 rounded-full text-red-400"></FaInstagram>
           <span>Instagram</span>
         </a>
       </div>
