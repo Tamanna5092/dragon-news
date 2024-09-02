@@ -1,43 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import img1 from "../../../assets/1.png";
-import img2 from "../../../assets/2.png";
-import img3 from "../../../assets/3.png";
-import icon from "../../../assets/Frame.png";
+import React from "react";
+import editor1 from "../assets/editorsInsight1.png";
+import editor2 from "../assets/editorsInsight2.png";
+import editor3 from "../assets/editorsInsight3.png";
+import icon from "../assets/Frame.png";
 import moment from "moment";
 
-const LeftSideNav = () => {
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    fetch("categories.json")
-      .then((res) => res.json())
-      .then((data) => setCategories(data));
-  }, []);
-
+const EditorInside = () => {
   return (
     <div>
       <div className="space-y-6">
-        <h2 className="text-xl text-[#403F3F] font-semibold mb-5">
-          All Caterogy
+        <h2 className="text-xl text-[#403F3F] font-semibold mt-5">
+          Editors Insight
         </h2>
-        <h3 className="w-full text-center text-xl bg-gray-200 font-semibold py-4 rounded-md">
-          National News
-        </h3>
-        {categories.map((category) => (
-          <Link
-            to={`/category/${category.id}`}
-            className="block text-xl text-[#9F9F9F] font-medium ml-5"
-            key={category.id}
-          >
-            {category.name}
-          </Link>
-        ))}
       </div>
-      <div>
-        <div className="card card-compact bg-base-100 shadow-xl rounded-md my-6">
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="card card-compact bg-base-100 rounded-md my-6">
           <figure>
-            <img className="w-full" src={img1} alt="" />
+            <img className="w-full" src={editor1} alt="" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
@@ -56,9 +35,9 @@ const LeftSideNav = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact bg-base-100 shadow-xl rounded-md my-6">
+        <div className="card card-compact bg-base-100 rounded-md my-6">
           <figure>
-            <img className="w-full" src={img2} alt="" />
+            <img className="w-full" src={editor2} alt="" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
@@ -77,9 +56,9 @@ const LeftSideNav = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact bg-base-100 shadow-xl rounded-md my-6">
+        <div className="card card-compact bg-base-100 rounded-md my-6">
           <figure>
-            <img className="w-full" src={img3} alt="" />
+            <img className="w-full" src={editor3} alt="" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
@@ -103,4 +82,4 @@ const LeftSideNav = () => {
   );
 };
 
-export default LeftSideNav;
+export default EditorInside;
