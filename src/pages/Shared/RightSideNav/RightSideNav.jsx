@@ -9,7 +9,7 @@ import {
 import qZone1 from "../../../assets/qZone1.png";
 import qZone2 from "../../../assets/qZone2.png";
 import qZone3 from "../../../assets/qZone3.png";
-import bg from "../../../assets/bg.png";
+import AmazingNews from "../../AmazingNews";
 
 const RightSideNav = () => {
   return (
@@ -56,12 +56,10 @@ const RightSideNav = () => {
         <h2 className="text-xl text-[#403F3F] font-semibold pl-4 pt-4">
           Q-Zone
         </h2>
-        <img src={qZone1} alt="" />
-        <img className="my-5" src={qZone2} alt="" />
-        <img src={qZone3} alt="" />
-        <div className="my-5">
-          <img className="" src={bg} alt="" />
-        </div>
+        <img className="w-full" src={qZone1} alt="" />
+        <img className="my-5 w-full" src={qZone2} alt="" />
+        <img className="w-full" src={qZone3} alt="" />
+        <AmazingNews></AmazingNews>
       </div>
     </div>
   );
